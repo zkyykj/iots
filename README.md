@@ -4,7 +4,7 @@ Iots Core staging tree 0.14.0
 
 `master:` [![Build Status](https://travis-ci.org/iotspay/iots.svg?branch=master)](https://travis-ci.org/iotspay/iots) `develop:` [![Build Status](https://travis-ci.org/iotspay/iots.svg?branch=develop)](https://travis-ci.org/iotspay/iots/branches)
 
-https://www.iots.org
+https://www.iots.cash
 
 
 What is Iots?
