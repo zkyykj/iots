@@ -1,0 +1,22 @@
+[Unit]
+Description=Iots's distributed currency daemon
+After=network.target
+
+[Service]
+User=iotscore
+Group=iotscore
+
+Type=forking
+PIDFile=/var/lib/iotsd/iotsd.pid
+ExecStart=/usr/bin/iotsd -daemon -pid=/var/lib/iotsd/iotsd.pid \
+-conf=/etc/iotscore/iots.conf -datadir=/var/lib/iotsd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

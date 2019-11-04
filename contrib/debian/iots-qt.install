@@ -1,0 +1,6 @@
+usr/local/bin/iots-qt usr/bin
+share/pixmaps/iots32.xpm usr/share/pixmaps
+share/pixmaps/iots16.xpm usr/share/pixmaps
+share/pixmaps/iots128.png usr/share/pixmaps
+debian/iots-qt.desktop usr/share/applications
+debian/iots-qt.protocol usr/share/kde4/services/

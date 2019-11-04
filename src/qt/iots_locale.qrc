@@ -1,0 +1,25 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="ar">locale/iots_ar.qm</file>
+        <file alias="bg">locale/iots_bg.qm</file>
+        <file alias="de">locale/iots_de.qm</file>
+        <file alias="en">locale/iots_en.qm</file>
+        <file alias="es">locale/iots_es.qm</file>
+        <file alias="fi">locale/iots_fi.qm</file>
+        <file alias="fr">locale/iots_fr.qm</file>
+        <file alias="it">locale/iots_it.qm</file>
+        <file alias="ja">locale/iots_ja.qm</file>
+        <file alias="ko">locale/iots_ko.qm</file>
+        <file alias="nl">locale/iots_nl.qm</file>
+        <file alias="pl">locale/iots_pl.qm</file>
+        <file alias="pt">locale/iots_pt.qm</file>
+        <file alias="ru">locale/iots_ru.qm</file>
+        <file alias="sk">locale/iots_sk.qm</file>
+        <file alias="sv">locale/iots_sv.qm</file>
+        <file alias="th">locale/iots_th.qm</file>
+        <file alias="tr">locale/iots_tr.qm</file>
+        <file alias="vi">locale/iots_vi.qm</file>
+        <file alias="zh_CN">locale/iots_zh_CN.qm</file>
+        <file alias="zh_TW">locale/iots_zh_TW.qm</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,67 @@
+#!/bin/bash
+#
+#  iotsd The Iots Core server.
+#
+#
+# chkconfig: 345 80 20
+# description: iotsd
+# processname: iotsd
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+# you can override defaults in /etc/sysconfig/iotsd, see below
+if [ -f /etc/sysconfig/iotsd ]; then
+        . /etc/sysconfig/iotsd
+fi
+
+RETVAL=0
+
+prog=iotsd
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/iotsd
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/iotsd}
+
+# iotsd defaults to /usr/bin/iotsd, override with BITCOIND_BIN
+iotsd=${BITCOIND_BIN-/usr/bin/iotsd}
+
+# iotsd opts default to -disablewallet, override with BITCOIND_OPTS
+iotsd_opts=${BITCOIND_OPTS--disablewallet}
+
+start() {
+    echo -n $"Starting $prog: "
+    daemon $DAEMONOPTS $iotsd $iotsd_opts
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && touch $lockfile
+    return $RETVAL
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    killproc $prog
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && rm -f $lockfile
+    return $RETVAL
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        status $prog
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    *)
+        echo "Usage: service $prog {start|stop|status|restart}"
+        exit 1
+        ;;
+esac

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Iots Core
+Comment=Iots P2P Cryptocurrency
+Comment[de]=Verbinde mit dem Iots peer-to-peer Netzwerk
+Comment[fr]=Iots, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Iots, eşten eşe kriptografik sanal para birimi
+Exec=iots-qt %u
+Terminal=false
+Type=Application
+Icon=iots128
+MimeType=x-scheme-handler/iots;
+Categories=Office;Finance;
