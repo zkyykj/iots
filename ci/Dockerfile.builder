@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y python3-pip
 RUN pip3 install pyzmq # really needed?
 
 # iots_hash
-RUN git clone https://github.com/iotspay/iots_hash
+RUN git clone https://github.com/iotscoin/iots_hash
 RUN cd iots_hash && python3 setup.py install
 
 ARG USER_ID=1000

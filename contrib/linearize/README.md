@@ -4,7 +4,7 @@ run using Python 3 but are compatible with Python 2.
 
 ## Step 0: Install iots_hash
 
-https://github.com/iotspay/iots_hash
+https://github.com/iotscoin/iots_hash
 
 ## Step 1: Download hash list
 

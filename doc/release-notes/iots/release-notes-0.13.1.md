@@ -3,13 +3,13 @@ Iots Core version 0.13.1.0
 
 Release is now available from:
 
-  <https://www.iots.org/downloads/#wallets>
+  <https://www.iots.one/downloads/#wallets>
 
 This is a new minor version release, bringing various bugfixes and other improvements.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/iotspay/iots/issues>
+  <https://github.com/iotscoin/iots/issues>
 
 
 Upgrading and downgrading
@@ -73,25 +73,25 @@ in some rare cases otherwise);
  0.13.1.0 Change log
 ===================
 
-See detailed [set of changes](https://github.com/iotspay/iots/compare/v0.13.0.0...iotspay:v0.13.1.0).
+See detailed [set of changes](https://github.com/iotscoin/iots/compare/v0.13.0.0...iotspay:v0.13.1.0).
 
 ### Backports
 
-- [`da5a861c0`](https://github.com/iotspay/iots/commit/da5a861c0) Change the way invalid ProTxes are handled in `addUnchecked` and `existsProviderTxConflict` (#2691)
-- [`6ada90c11`](https://github.com/iotspay/iots/commit/6ada90c11) Call existsProviderTxConflict after CheckSpecialTx (#2690)
-- [`23eb70cb7`](https://github.com/iotspay/iots/commit/23eb70cb7) Add getspecialtxes rpc (#2668)
-- [`023f8a01a`](https://github.com/iotspay/iots/commit/023f8a01a) Fix bench log for payee and special txes (#2678)
-- [`8961a6acc`](https://github.com/iotspay/iots/commit/8961a6acc) Stop checking MN protocol version before signalling DIP3 (#2684)
-- [`e18916386`](https://github.com/iotspay/iots/commit/e18916386) Add missing help text for `operatorPayoutAddress` (#2679)
-- [`0d8cc0761`](https://github.com/iotspay/iots/commit/0d8cc0761) Invoke CheckSpecialTx after all normal TX checks have passed (#2673)
-- [`592210daf`](https://github.com/iotspay/iots/commit/592210daf) Bump block stats when adding commitment tx into block (#2654)
-- [`070ad103f`](https://github.com/iotspay/iots/commit/070ad103f) Wait for script checks to finish before messing with txes in Iots-specific way (#2652)
-- [`3a3586d5a`](https://github.com/iotspay/iots/commit/3a3586d5a) Use helper function to produce help text for params of `protx` rpcs (#2649)
-- [`332e0361c`](https://github.com/iotspay/iots/commit/332e0361c) Add checkbox to show only masternodes the wallet has keys for (#2627)
+- [`da5a861c0`](https://github.com/iotscoin/iots/commit/da5a861c0) Change the way invalid ProTxes are handled in `addUnchecked` and `existsProviderTxConflict` (#2691)
+- [`6ada90c11`](https://github.com/iotscoin/iots/commit/6ada90c11) Call existsProviderTxConflict after CheckSpecialTx (#2690)
+- [`23eb70cb7`](https://github.com/iotscoin/iots/commit/23eb70cb7) Add getspecialtxes rpc (#2668)
+- [`023f8a01a`](https://github.com/iotscoin/iots/commit/023f8a01a) Fix bench log for payee and special txes (#2678)
+- [`8961a6acc`](https://github.com/iotscoin/iots/commit/8961a6acc) Stop checking MN protocol version before signalling DIP3 (#2684)
+- [`e18916386`](https://github.com/iotscoin/iots/commit/e18916386) Add missing help text for `operatorPayoutAddress` (#2679)
+- [`0d8cc0761`](https://github.com/iotscoin/iots/commit/0d8cc0761) Invoke CheckSpecialTx after all normal TX checks have passed (#2673)
+- [`592210daf`](https://github.com/iotscoin/iots/commit/592210daf) Bump block stats when adding commitment tx into block (#2654)
+- [`070ad103f`](https://github.com/iotscoin/iots/commit/070ad103f) Wait for script checks to finish before messing with txes in Iots-specific way (#2652)
+- [`3a3586d5a`](https://github.com/iotscoin/iots/commit/3a3586d5a) Use helper function to produce help text for params of `protx` rpcs (#2649)
+- [`332e0361c`](https://github.com/iotscoin/iots/commit/332e0361c) Add checkbox to show only masternodes the wallet has keys for (#2627)
 
 ### Other
 
-- [`bd0de4876`](https://github.com/iotspay/iots/commit/bd0de4876) Bump version to 0.13.1 (#2686)
+- [`bd0de4876`](https://github.com/iotscoin/iots/commit/bd0de4876) Bump version to 0.13.1 (#2686)
 
 Credits
 =======
@@ -126,19 +126,19 @@ Iots Core tree 0.12.1.x was a fork of Bitcoin Core tree 0.12.
 
 These release are considered obsolete. Old release notes can be found here:
 
-- [v0.13.0](https://github.com/iotspay/iots/blob/master/doc/release-notes/iots/release-notes-0.13.0.md) released Jan/14/2019
-- [v0.12.3.4](https://github.com/iotspay/iots/blob/master/doc/release-notes/iots/release-notes-0.12.3.4.md) released Dec/14/2018
-- [v0.12.3.3](https://github.com/iotspay/iots/blob/master/doc/release-notes/iots/release-notes-0.12.3.3.md) released Sep/19/2018
-- [v0.12.3.2](https://github.com/iotspay/iots/blob/master/doc/release-notes/iots/release-notes-0.12.3.2.md) released Jul/09/2018
-- [v0.12.3.1](https://github.com/iotspay/iots/blob/master/doc/release-notes/iots/release-notes-0.12.3.1.md) released Jul/03/2018
-- [v0.12.2.3](https://github.com/iotspay/iots/blob/master/doc/release-notes/iots/release-notes-0.12.2.3.md) released Jan/12/2018
-- [v0.12.2.2](https://github.com/iotspay/iots/blob/master/doc/release-notes/iots/release-notes-0.12.2.2.md) released Dec/17/2017
-- [v0.12.2](https://github.com/iotspay/iots/blob/master/doc/release-notes/iots/release-notes-0.12.2.md) released Nov/08/2017
-- [v0.12.1](https://github.com/iotspay/iots/blob/master/doc/release-notes/iots/release-notes-0.12.1.md) released Feb/06/2017
-- [v0.12.0](https://github.com/iotspay/iots/blob/master/doc/release-notes/iots/release-notes-0.12.0.md) released Aug/15/2015
-- [v0.11.2](https://github.com/iotspay/iots/blob/master/doc/release-notes/iots/release-notes-0.11.2.md) released Mar/04/2015
-- [v0.11.1](https://github.com/iotspay/iots/blob/master/doc/release-notes/iots/release-notes-0.11.1.md) released Feb/10/2015
-- [v0.11.0](https://github.com/iotspay/iots/blob/master/doc/release-notes/iots/release-notes-0.11.0.md) released Jan/15/2015
-- [v0.10.x](https://github.com/iotspay/iots/blob/master/doc/release-notes/iots/release-notes-0.10.0.md) released Sep/25/2014
-- [v0.9.x](https://github.com/iotspay/iots/blob/master/doc/release-notes/iots/release-notes-0.9.0.md) released Mar/13/2014
+- [v0.13.0](https://github.com/iotscoin/iots/blob/master/doc/release-notes/iots/release-notes-0.13.0.md) released Jan/14/2019
+- [v0.12.3.4](https://github.com/iotscoin/iots/blob/master/doc/release-notes/iots/release-notes-0.12.3.4.md) released Dec/14/2018
+- [v0.12.3.3](https://github.com/iotscoin/iots/blob/master/doc/release-notes/iots/release-notes-0.12.3.3.md) released Sep/19/2018
+- [v0.12.3.2](https://github.com/iotscoin/iots/blob/master/doc/release-notes/iots/release-notes-0.12.3.2.md) released Jul/09/2018
+- [v0.12.3.1](https://github.com/iotscoin/iots/blob/master/doc/release-notes/iots/release-notes-0.12.3.1.md) released Jul/03/2018
+- [v0.12.2.3](https://github.com/iotscoin/iots/blob/master/doc/release-notes/iots/release-notes-0.12.2.3.md) released Jan/12/2018
+- [v0.12.2.2](https://github.com/iotscoin/iots/blob/master/doc/release-notes/iots/release-notes-0.12.2.2.md) released Dec/17/2017
+- [v0.12.2](https://github.com/iotscoin/iots/blob/master/doc/release-notes/iots/release-notes-0.12.2.md) released Nov/08/2017
+- [v0.12.1](https://github.com/iotscoin/iots/blob/master/doc/release-notes/iots/release-notes-0.12.1.md) released Feb/06/2017
+- [v0.12.0](https://github.com/iotscoin/iots/blob/master/doc/release-notes/iots/release-notes-0.12.0.md) released Aug/15/2015
+- [v0.11.2](https://github.com/iotscoin/iots/blob/master/doc/release-notes/iots/release-notes-0.11.2.md) released Mar/04/2015
+- [v0.11.1](https://github.com/iotscoin/iots/blob/master/doc/release-notes/iots/release-notes-0.11.1.md) released Feb/10/2015
+- [v0.11.0](https://github.com/iotscoin/iots/blob/master/doc/release-notes/iots/release-notes-0.11.0.md) released Jan/15/2015
+- [v0.10.x](https://github.com/iotscoin/iots/blob/master/doc/release-notes/iots/release-notes-0.10.0.md) released Sep/25/2014
+- [v0.9.x](https://github.com/iotscoin/iots/blob/master/doc/release-notes/iots/release-notes-0.9.0.md) released Mar/13/2014
 

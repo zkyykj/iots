@@ -1,8 +1,8 @@
 Source: iots
 Section: utils
 Priority: optional
-Maintainer: Holger Schinzel <holger@iots.org>
-Uploaders: Holger Schinzel <holger@iots.org>
+Maintainer: Holger Schinzel <holger@iots.one>
+Uploaders: Holger Schinzel <holger@iots.one>
 Build-Depends: debhelper,
  devscripts,
  automake,
@@ -26,9 +26,9 @@ Build-Depends: debhelper,
  python,
  libzmq3-dev
 Standards-Version: 3.9.2
-Homepage: https://www.iots.org/
+Homepage: https://www.iots.one/
 Vcs-Git: git://github.com/iotspay/iots.git
-Vcs-Browser: https://github.com/iotspay/iots
+Vcs-Browser: https://github.com/iotscoin/iots
 
 Package: iotsd
 Architecture: any

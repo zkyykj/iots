@@ -11,7 +11,7 @@ the same, tested dependencies are used and statically built into the executable.
 Multiple developers build the source code by following a specific descriptor
 ("recipe"), cryptographically sign the result, and upload the resulting signature.
 These results are compared and only if they match, the build is accepted and uploaded
-to iots.org.
+to iots.one.
 
 More independent Gitian builders are needed, which is why this guide exists.
 It is preferred you follow these steps yourself instead of using someone else's
@@ -309,7 +309,7 @@ Clone the git repositories for Iots Core and Gitian.
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/iotspay/iots
+git clone https://github.com/iotscoin/iots
 git clone https://github.com/iotspay/gitian.sigs.git
 ```
 
@@ -376,7 +376,7 @@ Output from `gbuild` will look something like
     remote: Total 57959 (delta 0), reused 0 (delta 0), pack-reused 57958
     Receiving objects: 100% (57959/57959), 53.76 MiB | 484.00 KiB/s, done.
     Resolving deltas: 100% (41590/41590), done.
-    From https://github.com/iotspay/iots
+    From https://github.com/iotscoin/iots
     ... (new tags, new branch etc)
     --- Building for bionic amd64 ---
     Stopping target if it is up
@@ -452,7 +452,7 @@ Then when building, override the remote URLs that gbuild would otherwise pull fr
 ```bash
 
 cd /some/root/path/
-git clone https://github.com/iotspay/iots-detached-sigs.git
+git clone https://github.com/iotscoin/iots-detached-sigs.git
 
 BTCPATH=/some/root/path/iots
 SIGPATH=/some/root/path/iots-detached-sigs

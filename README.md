@@ -17,7 +17,7 @@ are carried out collectively by the network. Iots Core is the name of the open
 source software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Iots Core software, see https://www.iots.org/get-iots/.
+the Iots Core software, see https://www.iots.one/get-iots/.
 
 
 License
@@ -30,7 +30,7 @@ Development Process
 -------------------
 
 The `master` branch is meant to be stable. Development is normally done in separate branches.
-[Tags](https://github.com/iotspay/iots/tags) are created to indicate new official,
+[Tags](https://github.com/iotscoin/iots/tags) are created to indicate new official,
 stable release versions of Iots Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -75,7 +75,7 @@ Translations are periodically pulled from Transifex and merged into the git repo
 **Important**: We do not accept translation changes as GitHub pull requests because the next
 pull from Transifex would automatically overwrite them again.
 
-Translators should also follow the [forum](https://www.iots.org/forum/topic/iots-worldwide-collaboration.88/).
+Translators should also follow the [forum](https://www.iots.one/forum/topic/iots-worldwide-collaboration.88/).
 # Test
 =======
 # iots

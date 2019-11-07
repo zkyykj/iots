@@ -1,7 +1,7 @@
 Iots Core 0.14.0
 =====================
 
-This is the official reference wallet for Iots digital currency and comprises the backbone of the Iots peer-to-peer network. You can [download Iots Core](https://www.iots.org/downloads/) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for Iots digital currency and comprises the backbone of the Iots peer-to-peer network. You can [download Iots Core](https://www.iots.one/downloads/) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
@@ -24,12 +24,12 @@ Drag Iots-Qt to your applications folder, and then run Iots-Qt.
 
 ### Need Help?
 
-* See the [Iots documentation](https://docs.iots.org)
+* See the [Iots documentation](https://docs.iots.one)
 for help and more information.
 * See the [Iots Developer Documentation](https://iots-docs.github.io/) 
 for technical specifications and implementation details.
 * Ask for help on [Iots Nation Discord](http://iotschat.org)
-* Ask for help on the [Iots Forum](https://iots.org/forum)
+* Ask for help on the [Iots Forum](https://iots.one/forum)
 
 Building
 ---------------------
@@ -59,7 +59,7 @@ The Iots Core repo's [root README](/README.md) contains relevant information on 
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [Iots Forum](https://iots.org/forum), in the Development & Technical Discussion board.
+* Discuss on the [Iots Forum](https://iots.one/forum), in the Development & Technical Discussion board.
 * Discuss on [Iots Nation Discord](http://iotschat.org)
 
 ### Miscellaneous

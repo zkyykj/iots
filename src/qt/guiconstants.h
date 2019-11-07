@@ -52,7 +52,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "Iots"
-#define QAPP_ORG_DOMAIN "iots.org"
+#define QAPP_ORG_DOMAIN "iots.one"
 #define QAPP_APP_NAME_DEFAULT "Iots-Qt"
 #define QAPP_APP_NAME_TESTNET "Iots-Qt-testnet"
 #define QAPP_APP_NAME_DEVNET "Iots-Qt-%s"

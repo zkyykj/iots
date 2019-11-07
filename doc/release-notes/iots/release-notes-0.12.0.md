@@ -8,7 +8,7 @@ Iots Core version 0.12.0 is now available from:
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/iotspay/iots/issues
+  https://github.com/iotscoin/iots/issues
 
 
 How to Upgrade

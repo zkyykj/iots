@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/iotspay/iots-detached-sigs.git"
+- "url": "https://github.com/iotscoin/iots-detached-sigs.git"
   "dir": "signature"
 files:
 - "iotscore-osx-unsigned.tar.gz"
