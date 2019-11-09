@@ -77,7 +77,7 @@ static CBlock CreateDevNetGenesisBlock(const uint256 &prevBlockHash, const std::
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "Wired 05/Nov/2019 Iots is committed to the development of IOT";
+    const char* pszTimestamp = "Wired 10/Nov/2019 Iots is committed to the development of IOT";
     const CScript genesisOutputScript = CScript() << ParseHex("0486b0ae64eed59d1b31307483e3381d0db5beaf5e431f81add767364505395c3adfea56edf1e3968140c3a188b8e1dfe4f4aaf7d3d2dbbaca5555ac9c4710bac3") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -215,13 +215,13 @@ public:
         consensus.nGovernanceFilterElements = 20000;
         consensus.nMasternodeMinimumConfirmations = 15;
         consensus.BIP34Height = 1;
-        consensus.BIP34Hash = uint256S("0x00000aed0b6b87d09b89b97dac74dc0c512bb67ea5239dae55eda2a2b4a16976");
+        consensus.BIP34Hash = uint256S("0x00000ae5ce5bcf1461c0bb6b5d564db6ff8324f5a72f6da43dbe07033c7ea467");
         consensus.BIP65Height = 2; // 00000000000076d8fcea02ec0963de4abfd01e771fec0863f960c2c64fe6f357
         consensus.BIP66Height = 3; // 00000000000b1fa2dfa312863570e13fae9ca7b5566cb27e55422620b469aefa
         consensus.DIP0001Height = 4;
         consensus.DIP0003Height = 5;
-        consensus.DIP0003EnforcementHeight = 1047200;
-        consensus.DIP0003EnforcementHash = uint256S("000000000000002d1734087b4c5afc3133e4e1c3e1a89218f62bcd9bb3d17f81");
+        consensus.DIP0003EnforcementHeight = 6;
+        consensus.DIP0003EnforcementHash = uint256S("00000620dc749653d832d340208673a12429f40df6d5789f00c393b2bf7d1362");
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20
         consensus.nPowTargetTimespan = 24 * 60 * 60; // Iots: 1 day
         consensus.nPowTargetSpacing = 2.5 * 60; // Iots: 2.5 minutes
@@ -269,10 +269,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nThreshold = 3226; // 80% of 4032
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000200020"); // 1067570
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000300030"); // 1067570
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x00000aed0b6b87d09b89b97dac74dc0c512bb67ea5239dae55eda2a2b4a16976"); // 1067570
+        consensus.defaultAssumeValid = uint256S("0x00000da7bf3cab2badc6ecd7b5b24413f30320cb9a8340c83208f71f9ffa0b9f"); // 1067570
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -287,17 +287,16 @@ public:
         nDefaultPort = 6669;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1572704600, 2036555, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1573315200, 47631, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
 
+        assert(consensus.hashGenesisBlock == uint256S("0x0000011ea43127f954aea9df4491f6558443b5d8292e56362cc0efd54843a2fb"));
+        assert(genesis.hashMerkleRoot == uint256S("0x23cc3c90e4e73b096ebd53869d8125827a67a6c87394043ed8c0d3e6b2c34c00"));
 
-        assert(consensus.hashGenesisBlock == uint256S("0x00000fc95a6e8cc932102aee3fdf7fc736615f43f0ad47842240c42cb2bc6b00"));
-        assert(genesis.hashMerkleRoot == uint256S("0x42c46c77f73045ce364fb5af1b2815a0c1ef42f8c4830b234582447c134f10ba"));
 
-
-        vSeeds.push_back(CDNSSeedData("49.233.139.97", "49.233.139.97"));
-        //vSeeds.push_back(CDNSSeedData("iotsdot.io", "dnsseed.iotsdot.io"));
-        //vSeeds.push_back(CDNSSeedData("masternode.io", "dnsseed.masternode.io"));
+        vSeeds.push_back(CDNSSeedData("peer1.iots.one", "peer2.iots.one"));
+                vSeeds.push_back(CDNSSeedData("peer3.iots.one", "peer4.iots.one"));
+                vSeeds.push_back(CDNSSeedData("peer5.iots.one", "peer6.iots.one"));
 
         // Iots addresses start with 'X'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,76);
@@ -334,17 +333,19 @@ public:
         nPoolMaxParticipants = 5;
         nFulfilledRequestExpireTime = 60*60; // fulfilled requests expire in 1 hour
 
-        vSporkAddresses = {"XpBjBEmaSLPsrYBW9NLkyyGcpuhdRi8vwV"};
+        vSporkAddresses = {"XswQKCeb32pm1bwnVmFV39RPqxFiboTvsy"};
         nMinSporkKeys = 1;
         fBIP9CheckMasternodesUpgraded = true;
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            (  0, uint256S("0x00000fc95a6e8cc932102aee3fdf7fc736615f43f0ad47842240c42cb2bc6b00"))
+            (  0, uint256S("0x0000011ea43127f954aea9df4491f6558443b5d8292e56362cc0efd54843a2fb"))
+                        (  1, uint256S("0x00000ae5ce5bcf1461c0bb6b5d564db6ff8324f5a72f6da43dbe07033c7ea467"))
+                        (  6, uint256S("0x00000620dc749653d832d340208673a12429f40df6d5789f00c393b2bf7d1362"))
         };
 
         chainTxData = ChainTxData{
-            1557610432, // * UNIX timestamp of last known number of transactions (Block 1068571)
+            1573315220, // * UNIX timestamp of last known number of transactions (Block 1068571)
             0,   // * total number of transactions between genesis and that timestamp
                         //   (the tx=... number in the SetBestChain debug.log lines)
             0.1         // * estimated number of transactions per second after that timestamp
